@@ -8,7 +8,8 @@ export function connectWebSocket(
   onMessage: (msg: any) => void
 ) {
 
-  const socket = new SockJS("http://localhost:8080/ws");
+  // const socket = new SockJS("http://localhost:8080/ws");
+  const socket = new SockJS("https://youtube-room-project-8.onrender.com/ws");
 
   stompClient = new Client({
     webSocketFactory: () => socket,

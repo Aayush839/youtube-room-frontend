@@ -87,7 +87,9 @@ const handleEvent = (event: RoomEvent) => {
 
    setTimeout(() => {
 
-    fetch(`http://localhost:8080/rooms/join?roomId=${roomId}&userId=${userId}`, {
+    // fetch(`http://localhost:8080/rooms/join?roomId=${roomId}&userId=${userId}`, {
+    fetch(`https://youtube-room-project-8.onrender.com/rooms/join?roomId=${roomId}&userId=${userId}`, {
+
       method: "POST"
     })
       .then(res => res.json())
